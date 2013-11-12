@@ -10,8 +10,8 @@ Features:
 - Multiple status of drama, and color coded. 
 - Geolocation of drama can be recorded. 
 - Auto disable any control that should not be changed.
-> When a drama is not in airing, change and delete is not allowed. 
-> Non-numerical season cannot be changed.
+- --When a drama is not in airing, change and delete is not allowed. 
+- --Non-numerical season cannot be changed.
 - Deletion alert to prevent accidentally click the delete button. 
 - Auto scroll to bottom of list. 
 
