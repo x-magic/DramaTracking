@@ -1,3 +1,6 @@
 #DramaTrackingDatabases
 db_drama.csv
 db_status.csv
+
+#ApacheConfigurations
+.ht*
