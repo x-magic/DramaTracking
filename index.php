@@ -29,9 +29,10 @@ $statusArray = array_combine($statusKey,$statusValue); ?>
             * {font-family: sans-serif; }
             html {display: table; margin: auto; }
             body {display: table-cell; width: 100%;}
-            .box {width: 5em; padding: 0 5px 0 5px; }
+            .boxSeason {width: 5em; padding: 0 5px 0 5px; }
+            .boxEpisode {width: 2em; padding: 0 5px 0 5px; }
             .btn {min-width: 2em; }
-            .title {min-width: 20em; }
+            .title {min-width: 10em; }
             .add {width: 100%; }
             .btnop {min-width: 5em; }
             .outside {padding: 1em 0 1em 0; text-align: center; }
@@ -104,10 +105,10 @@ $statusArray = array_combine($statusKey,$statusValue); ?>
                         </select>
                     </td>
                     <td rowspan="2">
-                        <input type="text" value="" name="season" class="box">
+                        <input type="text" value="" name="season" class="boxSeason">
                     </td>
                     <td rowspan="2">
-                        <input type="text" value="" name="episode" class="box">
+                        <input type="text" value="" name="episode" class="boxEpisode">
                     </td>
                     <td rowspan="2">
                         <select name="status" class="add">
@@ -178,12 +179,12 @@ $statusArray = array_combine($statusKey,$statusValue); ?>
                 <tr style="background: <?php echo $statusArray[$currentDrama[3]][2]?>;">
                     <td><?php echo $currentDrama[0];?></td>
                     <td>
-                        <input type="text" value="<?php echo $currentDrama[1];?>" name="season" class="box"<?php if (!ctype_digit($currentDrama[1]) || $currentDrama[3] !== $statusArray['A'][0]) echo " disabled"; ?>>
+                        <input type="text" value="<?php echo $currentDrama[1];?>" name="season" class="boxSeason"<?php if (!ctype_digit($currentDrama[1]) || $currentDrama[3] !== $statusArray['A'][0]) echo " disabled"; ?>>
                         <input type="button" value="+" name="seasonplus" class="btn" onClick="btnoperation(this,'+');"<?php if (!ctype_digit($currentDrama[1]) || $currentDrama[3] !== $statusArray['A'][0]) echo "  disabled"; ?>>
                         <input type="button" value="-" name="seasonminus" class="btn" onClick="btnoperation(this,'-');"<?php if (!ctype_digit($currentDrama[1]) || $currentDrama[3] !== $statusArray['A'][0]) echo "disabled"; ?>>
                     </td>
                     <td>
-                        <input type="text" value="<?php echo $currentDrama[2];?>" name="episode" class="box"<?php if ($currentDrama[3] !== $statusArray['A'][0]) echo " disabled"; ?>>
+                        <input type="text" value="<?php echo $currentDrama[2];?>" name="episode" class="boxEpisode"<?php if ($currentDrama[3] !== $statusArray['A'][0]) echo " disabled"; ?>>
                         <input type="button" value="+" name="episodeplus" class="btn" onClick="btnoperation(this,'+');"<?php if ($currentDrama[3] !== $statusArray['A'][0]) echo " disabled"; ?>>
                         <input type="button" value="-" name="episodeminus" class="btn" onClick="btnoperation(this,'-');"<?php if ($currentDrama[3] !== $statusArray['A'][0]) echo " disabled"; ?>>
                     </td>
