@@ -1,17 +1,17 @@
-A,Airing,#CCFFCC
-E,Ended,#8080FF
-C,Cancelled,#FFB2B2
-H,Half-season,#999999
-R,Renewed,#CC99FF
-T,To be decided,#FFFF99
-N,No longer follow,#FFFFFF
-1,1 episode to go,#B2FFFF
-2,2 episodes to go,#B2FFFF
-3,3 episodes to go,#B2FFFF
-4,4 episodes to go,#B2FFFF
-5,5 episodes to go,#B2FFFF
-6,6 episodes to go,#B2FFFF
-7,7 episodes to go,#B2FFFF
-8,8 episodes to go,#B2FFFF
-9,9 episodes to go,#B2FFFF
-0,More than 9 to go,#B2FFFF
+A,Airing,#CCFFCC,4
+E,Ended,#8080FF,5
+C,Cancelled,#FFB2B2,5
+H,Half-season,#999999,9
+R,Renewed,#CC99FF,9
+T,To be decided,#FFFF99,4
+N,No longer follow,#FFFFFF,5
+1,1 episode to go,#B2FFFF,3
+2,2 episodes to go,#B2FFFF,3
+3,3 episodes to go,#B2FFFF,3
+4,4 episodes to go,#B2FFFF,3
+5,5 episodes to go,#B2FFFF,3
+6,6 episodes to go,#B2FFFF,3
+7,7 episodes to go,#B2FFFF,3
+8,8 episodes to go,#B2FFFF,3
+9,9 episodes to go,#B2FFFF,3
+0,More than 9 to go,#B2FFFF,3
