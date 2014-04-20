@@ -222,15 +222,21 @@ function toDisable($statusCode,$matchCode) {
             <form method="POST"><button type="submit" value="1" name="add">Add new drama</button></form>
             <?php //Show an alert if content has been changed
 			if($statAdded) { ?>
-            <div>Add drama successful!</div>
+            <div id="message">Add drama successful!</div>
             <?php } elseif($statUpdate) { ?>
-            <div>Update drama successful!</div>
+            <div id="message">Update drama successful!</div>
             <?php } elseif($statDelete) { ?>
-            <div>Delete drama successful!</div>
+            <div id="message">Delete drama successful!</div>
             <?php } ?>
         </div>
         <?php }?>
 		<!-- Scroll to bottom of page -->
-        <script type="text/javascript">window.scrollTo(0,document.body.scrollHeight);</script>
+        <script type="text/javascript">
+			function hideMessage() {
+				document.getElementById('message').style.display="none";
+			}
+			window.scrollTo(0,document.body.scrollHeight);
+			setTimeout('hideMessage()', 1000);
+		</script>
     </body>
 </html>
