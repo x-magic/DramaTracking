@@ -43,6 +43,7 @@ function toDisable($statusCode,$matchCode) {
             table {border-collapse: collapse; }
             th, td {padding: 0 5px 0 5px; border :1px solid black; }
             thead {background: black; color: white; }
+			input[type=button]:disabled, button:disabled {visibility: hidden; }
             -->
         </style>
         <script type="text/javascript">
