@@ -179,6 +179,7 @@ function toDisable($statusCode,$matchCode) {
             while(!feof($dramaFile)) {
                 $currentDrama = fgetcsv($dramaFile);
                 //empty should be skipped
+                if ($currentDrama !== false) 
                 if (count($currentDrama) >= 5) { ?>
                 <form method="POST">
                 <tr style="background: <?php echo $statusArray[$currentDrama[3]][2]?>;">
