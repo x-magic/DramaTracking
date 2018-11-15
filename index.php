@@ -1,4 +1,6 @@
 <?php
+setlocale(LC_ALL, 'en_US.UTF-8');
+
 //databases used in the process
 $dramaDB = "db_drama.csv";
 $statusDB = "db_status.csv";
