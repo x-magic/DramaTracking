@@ -223,7 +223,10 @@ function toDisable($statusCode,$matchCode) {
             </tbody>
         </table>
         <div class="outside">
-            <form method="POST"><button type="submit" value="1" name="add">Add new drama</button></form>
+            <form method="POST">
+                <button type="button" onclick="window.open('https://www.pogdesign.co.uk/cat/', '_blank')">PoGDesign TV Calendar</button>
+                <button type="submit" value="1" name="add">Add new drama</button>
+            </form>
             <?php //Show an alert if content has been changed
 			if($statAdded) { ?>
             <div id="message">Add drama successful!</div>
